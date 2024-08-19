@@ -1,6 +1,6 @@
 {
-  "name": "my-vscode-extension",
-  "displayName": "My VSCode Extension",
+  "name": "CodEx",
+  "displayName": "CodEx",
   "description": "A GitHub Copilot-like extension for code generation",
   "version": "0.0.1",
   "engines": {
