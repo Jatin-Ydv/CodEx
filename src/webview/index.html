@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Generation Prompt</title>
+</head>
+
+<body>
+    <h1>Enter Your Prompt</h1>
+    <textarea id="prompt" style="width:100%; height: 60px;"></textarea>
+    <button onclick="submitPrompt()">Generate Code</button>
+    <script>
+        const vscode = acquireVsCodeApi();
+        function submitPrompt() {
+            const prompt = document.getElementById('prompt').value;
+            vscode.postMessage({ prompt });
+        }
+    </script>
+</body>
+
+</html>
